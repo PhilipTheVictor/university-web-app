@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+
+.ddsmoothmenu {
+
+	width:705px;
+
+	float:left;
+    margin-top:30px; 
+	padding-left:55px;
+}
+
+.ddsmoothmenu ul {
+
+	z-index:100;
+
+	list-style:none;
+
+	margin:0px;
+
+	padding:0px;
+
+}
+
+/*Top level list items*/
+
+.ddsmoothmenu ul li {
+
+	position: relative;
+
+	width:175px;
+
+	float:left;
+
+	text-align:center;
+
+	display:inline-block;
+
+	height:41px;
+	
+	padding-right:1px;
+
+	text-transform:uppercase;
+
+	text-shadow: 1px 1px 3px #000;
+
+	font-size:15px;
+
+	font-weight:bold;
+
+}
+
+/*Top level menu link items style*/
+
+.ddsmoothmenu ul li a {
+
+	color:#FFFFFF;
+
+	display:block;
+
+	line-height:41px;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_g a {
+
+	background-color:#E3C77B;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_g ul li {
+
+	background-color:#E3C77B;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_g ul li a:hover {
+
+	/*background-color:#6F6F6F !important;*/
+	background-color: #615127 !important;
+	/*color: #846B35 !important;*/
+	text-shadow: none;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_dg a {
+
+	background-color:#FAE5B0;
+	/*
+	#E3C77B
+	 */
+	
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_dg ul li {
+
+	background-color:#E3C77B;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_dg ul li a:hover {
+
+	/*background-color:#6F6F6F !important;*/
+	background-color: #615127 !important;
+	/*color: #846B35 !important;*/
+	text-shadow: none;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_r a {
+
+	background-color:#E3C77B;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_r ul li {
+
+	background-color:#E3C77B;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_r ul li a:hover {
+
+	/*background-color:#6F6F6F !important;*/
+	background-color: #615127 !important;
+	/*color: #846B35 !important;*/
+	text-shadow: none;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_lg a {
+
+	background-color:#E3C77B;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_lg ul li {
+
+	background-color:#E3C77B;
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_lg ul li a:hover {
+
+	/*background-color:#6F6F6F !important;*/
+	background-color: #615127 !important;
+	/*color: #846B35 !important;*/
+	text-shadow: none;
+
+}
+
+* html .ddsmoothmenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+
+	display: inline-block;
+
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited {
+
+/*color: white;*/
+
+}
+
+.ddsmoothmenu ul li a.selected { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+	background-color:#615127 !important;
+}
+
+.ddsmoothmenu ul li a:hover {
+    background-color:#6F6F6F  !important;
+	text-decoration:none;
+
+}
+
+/*1st sub level menu*/
+
+.ddsmoothmenu ul li ul {
+
+	position: absolute;
+
+	left: 0;
+
+	display: none; /*collapse all sub menus to begin with*/
+
+	visibility: hidden;
+
+	width:200px !important;
+
+	margin:0px;
+
+	border-bottom:#333 1px solid;
+
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+
+.ddsmoothmenu ul li ul li {
+
+	border:0px;
+
+	background-color:#B2D340;
+
+	padding:0px !important;
+
+	height:30px !important;
+
+	background-image:none !important;
+
+	border-top:#333 1px solid;
+
+	width:100%;
+
+	font-size:10px;
+
+	font-weight:normal;
+
+}
+
+.ddsmoothmenu ul li ul li a {
+
+	display:block;
+
+	padding:0 10px !important;
+
+	width:180px !important;
+
+	margin:0px !important;
+
+	line-height:30px !important;
+
+	background:#C5A32A !important;
+
+	text-align:left;
+
+	color:#fff;
+
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+
+.ddsmoothmenu ul li ul li ul {
+
+	top:-1px !important;
+
+}
+
+/* Sub level menu links style */
+
+.ddsmoothmenu ul li ul li a:hover {
+
+	background-image:none;
+
+	color:#fff !important;
+
+	background-color: #FAE5B0 !important; /*//#849D25 !important;*/
+
+	height:30px !important;
+
+}
+
+.ddsmoothmenu ul li ul li a.selected {
+	background-image:none;
+	color:#ccc !important;
+	/*background-color:#FAE5B0 !important;/*#262626;*/
+	background-color:#615127 !important;
+	height:30px !important;
+
+}
+
+.ddsmoothmenu ul li ul li a span {
+
+	/*background:url(right.gif) right no-repeat !important;*/
+
+	display:block;
+
+}
+
+.ddsmoothmenu ul li ul li a:hover span {
+
+	/*background:url(right_hover.gif) right no-repeat !important;*/
+
+	display:block;
+
+}
+
+.ddsmoothmenu ul li ul li a.selected span {
+
+	/*background:url(right_hover.gif) right no-repeat !important;*/
+
+	display:block;
+
+}
+
+/* Holly Hack for IE \*/
+
+* html .ddsmoothmenu {
+
+	height: 1%;
+
+} /*Holly Hack for IE7 and below*/
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+
+
+.downarrowclass {
+
+	position: absolute;
+
+	top: 12px;
+
+	right: 7px;
+
+	display:none;
+
+}
+
+.rightarrowclass {
+
+	position: absolute;
+
+	top: 6px;
+
+	right: 5px;
+
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+
+
+.ddshadow {
+
+	position: absolute;
+
+	left: 0;
+
+	top: 0;
+
+	width: 0;
+
+	height: 0;
+
+}
+
+.toplevelshadow { /*shadow opacity. Doesn't work in IE*/
+
+}
+
+.ddsmoothmenu ul li.top_nav_bg_dg a, .ddsmoothmenu ul li.top_nav_bg_g a, .ddsmoothmenu ul li.top_nav_bg_r a, .ddsmoothmenu ul li.top_nav_bg_lg a {
+	background-color: #C5A32A;/* Older darker color of golden #896D18;*/
+}
+
+.ddsmoothmenu ul li.top_nav_bg_dg a:hover, .ddsmoothmenu ul li.top_nav_bg_g a:hover, .ddsmoothmenu ul li.top_nav_bg_r a:hover, .ddsmoothmenu ul li.top_nav_bg_lg a:hover {
+	background-color:#615127 !important;
+	color:#fff !important;
+}
+
+/*.ddsmoothmenu ul li.top_nav_bg_g a{
+	background-image: url("arrow_right.png") !important;
+}
+*/
+/*#FAE5B0*/

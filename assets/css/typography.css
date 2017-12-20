@@ -1,0 +1,25 @@
+@charset "utf-8";/* CSS Document */
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+	color:#2c2c2c;	
+	font-family:Calibri;
+}
+#content h1 {	
+	font-size:24px;
+}
+#content h2 {	font-size:22px;	padding-top:10px;}
+#content h3 {	font-size:20px;	padding-top:10px;}
+#content h4 {	font-size:18px;	padding-top:10px;}
+#content h5 {	font-size:16px;	padding-top:10px;}
+#content h6 {	font-size:14px;	padding-top:10px;}
+.details ul li {	color:#2c2c2c;	font-size:13px;	font-family:Calibri;	line-height:20px;}
+#content table.table_form {	font-size:13px;	font-family:Calibri;	line-height:20px;}
+#content table input.input_field {	background-color:#eae7e7;	border:#e4e1e1 1px solid;	padding:5px;}
+#content table select {	background-color:#eae7e7;	border:#e4e1e1 1px solid;	padding:5px;}
+#content table textarea.textarea {	background-color:#eae7e7;	border:#e4e1e1 1px solid;	padding:5px;}
+#content table input.btn_snd {	background-color:#eae7e7;	border:#e4e1e1 1px solid;	padding:5px;}
+#content table input.btn_snd:hover {	background-color:#e4e1e1;	border:#e4e1e1 1px solid;}
+#content p {
+	font-size: 1em;
+	line-height: 20px;
+	text-align: left;
+}
